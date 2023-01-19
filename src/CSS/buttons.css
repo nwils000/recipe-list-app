@@ -1,0 +1,28 @@
+.button {
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: inherit;
+  border-radius: 20px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.button-edit {
+  color: rgb(0, 0, 0);
+  background-color: hsla(107, 35%, 42%, 0.8);
+}
+
+.button-edit:hover {
+  background-color: hsla(107, 35%, 42%);
+}
+
+.button-delete {
+  color: hsla(107, 35%, 42%);
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+
+.button-delete:hover {
+  background-color: hsl(0, 0%, 0%);
+}
