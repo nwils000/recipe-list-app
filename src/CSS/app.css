@@ -2,6 +2,7 @@
 @import "recipe.css";
 @import "recipe-list.css";
 @import "buttons.css";
+@import "recipe-edit.css";
 
 *,
 *::before,

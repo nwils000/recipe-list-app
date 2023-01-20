@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import RecipeList from "./RecipeList";
+import RecipeEdit from "./RecipeEdit";
 import "../CSS/app.css";
 import { v4 as uuidv4 } from "uuid";
 
@@ -34,11 +35,14 @@ export default function App() {
   }
 
   return (
-    <RecipeList
-      recipes={recipes}
-      handleRecipeAdd={handleRecipeAdd}
-      handleRecipeDelete={handleRecipeDelete}
-    />
+    <div>
+      <RecipeList
+        recipes={recipes}
+        handleRecipeAdd={handleRecipeAdd}
+        handleRecipeDelete={handleRecipeDelete}
+      />
+      <RecipeEdit />
+    </div>
   );
 }
 
