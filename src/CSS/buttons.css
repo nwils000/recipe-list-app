@@ -9,6 +9,10 @@
   cursor: pointer;
 }
 
+.button-add-ingredient {
+  padding: 5px 20px;
+}
+
 .button-edit {
   color: rgb(0, 0, 0);
   background-color: hsla(107, 35%, 42%, 0.8);

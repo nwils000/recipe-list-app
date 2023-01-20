@@ -4,7 +4,62 @@
   position: fixed;
   right: 0;
   top: 0;
-  width: 50%;
+  width: 60%;
   max-height: 100%;
   overflow-y: auto;
+}
+
+.recipe-edit__remove-button-container {
+  text-align: end;
+}
+
+.recipe-edit__remove-button {
+  padding: 0;
+  background: none;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.recipe-edit__details-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 10px;
+  column-gap: 40px;
+}
+
+.recipe-edit__label {
+  font-weight: bold;
+  color: white;
+}
+
+.recipe-edit__input {
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: inherit;
+  padding: 5px 10px;
+  outline: none;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px;
+}
+
+textarea.recipe-edit__input {
+  resize: none;
+  height: 200px;
+}
+
+.recipe-edit__ingredient-grid {
+  display: grid;
+  color: white;
+  gap: 10px;
+  grid-template-columns: repeat(3, auto);
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.recipe-edit__add-ingredient-button-container {
+  margin-top: 20px;
+  text-align: center;
 }
