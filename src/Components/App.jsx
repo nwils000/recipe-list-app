@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RecipeList from "./RecipeList";
 import "../CSS/app.css";
 import { v4 as uuidv4 } from "uuid";
 
+const LOCAL_STORAGE_KEY = "recipe-list-app.recipes";
+
 export default function App() {
   const [recipes, setRecipes] = useState(sampleRecipes);
+
+  useEffect(() => {
+    const recipeJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
+    if (recipeJSON != null) setRecipes(JSON.parse(recipeJSON));
+  }, []);
+  useEffect(() => {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(recipes));
+  }, [recipes]);
 
   function handleRecipeAdd() {
     const newRecipe = {
