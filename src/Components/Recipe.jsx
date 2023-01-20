@@ -37,7 +37,10 @@ export default function Recipe({
         </div>
       </div>
       <div>
-        <button className="button button-edit" onClick={handleRecipeSelect(id)}>
+        <button
+          className="button button-edit"
+          onClick={() => handleRecipeSelect(id)}
+        >
           Edit
         </button>
         <button
