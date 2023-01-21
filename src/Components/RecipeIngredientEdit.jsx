@@ -23,7 +23,11 @@ export default function RecipeIngredientEdit({
         value={ingredient.amount}
         onChange={(e) => handleChange({ name: e.target.value })}
       />
-      <button onClick={() => handleIngredientDelete(ingredient.id)}>
+      <button
+        className="button button-delete"
+        onClick={() => handleIngredientDelete(ingredient.id)}
+        style={{ padding: "5px 20px" }}
+      >
         &times;
       </button>
     </>
