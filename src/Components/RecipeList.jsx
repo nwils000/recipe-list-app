@@ -8,8 +8,7 @@ export default function RecipeList({ recipes }) {
 
   useEffect(() => {
     let QueryDisplayedRecipes = recipes.filter((recipe) => {
-      if (query === "") return recipes;
-      if (recipe.name.toLowerCase().includes(query)) return recipe;
+      return recipe.name.toLowerCase().includes(query);
     });
     setDisplayedRecipes(QueryDisplayedRecipes);
   }, [query, recipes]);
