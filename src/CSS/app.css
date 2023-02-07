@@ -22,4 +22,5 @@ body {
   background-image: url("../Photos/pexels-ray-piedra-1565982.jpg");
   background-size: cover;
   background-attachment: fixed;
+  margin-bottom: 2rem;
 }
