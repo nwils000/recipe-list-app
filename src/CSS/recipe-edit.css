@@ -63,3 +63,9 @@ textarea.recipe-edit__input {
   margin-top: 20px;
   text-align: center;
 }
+
+@media screen and (max-width: 870px) {
+  .recipe-edit {
+    display: none;
+  }
+}
