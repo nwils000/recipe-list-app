@@ -47,3 +47,21 @@
 .recipe__instructions {
   white-space: pre-wrap;
 }
+
+@media screen and (max-width: 346px) {
+  .recipe__header {
+    font-size: 0.8rem;
+  }
+  .recipe__buttons {
+    flex-direction: column;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 10px;
+  }
+  .recipe {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
